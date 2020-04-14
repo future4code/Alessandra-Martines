@@ -1,0 +1,21 @@
+whoami - nome do usuário
+echo - imprimir/printar
+pwd - vizualizar pasta atual
+cd - mudar de pasta
+    ./ onde estou
+    - volta pra pasta
+    ../uma acima
+clear - limpa a tela
+ls - mostra conteúdo da pasta
+    -a mostra arquivos ocultos
+    -la mostra todas as infos
+touch - cria arquivos
+mkdir - cria pasta
+rm - remove o arquivos
+    -r remove a pasta
+mv - muda o arquivo de pasta
+cp - copia o arquivo
+cat - le o arquivo todo
+head -n - imprimi aprimeiras linhas indicadas
+tail -n - imprimi as ultimas linhas indicadas
+grep - buscar um conteudo especifico dentro do arquivo
