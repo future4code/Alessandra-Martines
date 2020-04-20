@@ -24,6 +24,8 @@ input {
 
 button:focus {
     color: white;
+    position: relative;
+    margin-left: 50px;
 }
 
 img {
