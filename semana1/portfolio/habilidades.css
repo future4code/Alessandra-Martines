@@ -1,0 +1,27 @@
+body {
+    background-color: rosybrown;
+}
+
+/* Formatação do Cabeçalho*/
+#cabecalho {
+    font-family: Lucida Handwriting;
+    text-align: center;
+    color: burlywood;
+    position: absolute;
+    background-color:  brown;
+    padding: 50px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+h3 {
+    color: brown;
+    text-shadow: 2px 2px 2px burlywood;
+    font-size: 25px;
+}
+
+p {
+    text-shadow: 2px 2px 2px burlywood;
+    font-size: 15px;
+}
