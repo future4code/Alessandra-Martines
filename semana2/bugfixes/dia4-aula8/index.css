@@ -24,8 +24,6 @@ input {
 
 button:focus {
     color: white;
-    position: relative;
-    margin-left: 50px;
 }
 
 img {
@@ -147,5 +145,9 @@ td button {
 }
 
 #back-button:hover {
-    background-color: #635a3d
+    background-color: #635a3d;
+}
+
+#button-comprar:hover {
+    background-color: #635a3d;
 }
