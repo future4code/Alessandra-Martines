@@ -1,0 +1,70 @@
+div {
+    border: none;
+    color: white;
+}
+
+.container {
+    width: 125%;
+    height: 780px;
+    text-align: center;
+    background-color: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(14, 1fr); /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+}
+
+#header {
+    background-color: green;
+    /*Verde*/
+    grid-row: 1;
+    grid-column: 1;
+}
+
+#menu {
+    background-color: yellow;
+    /*Amarelo*/
+    grid-row: 1;
+    grid-column: 2/5;
+}
+
+#content1 {
+    background-color: magenta;
+    /*Rosa*/
+    grid-row: 2/10;
+    grid-column: 1/5;
+}
+
+#content2 {
+    background-color: blue;
+    /*Azul*/
+    grid-row: 10/14;
+    grid-column: 1/3;
+}
+
+#image-white {
+    background-color: white;
+    /*Branco*/
+    grid-row: 10/14;
+    grid-column: 3;
+}
+
+#image {
+    background-color: red;
+    /*Vermelho*/
+    grid-row: 10/12;
+    grid-column: 4;
+}
+
+#extra {
+    background-color: aqua;
+    /*Verde água*/
+    grid-row: 12/14;
+    grid-column: 4;
+}
+
+#footer {
+    background-color: purple;
+    /*Roxo*/
+    grid-row: 14;
+    grid-column: 1/5;
+}
