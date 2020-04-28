@@ -51,4 +51,66 @@ array[i] = array[i-3]
 const resultadoC = array[i]%array[1]
 console.log('VII. ', resultadoC)
 
+//RESPOSTAS - EXERCÍCIO 1 ESCRITA DE CÓDIGO//
+//a//
+const f=77
+const k=(f - 32)*5/9 + 273.15
+var resultadoA = (f - 32)*5/9 + 273.15
+console.log( resultadoA, "k") //298.15//
+
+//b//
+const c=80
+const f=(c)*9/5 + 32
+var resultadoA = (f - 32)*5/9 + 273.15
+console.log( resultadoA, "c") //353.15//
+
+//c//
+const c=30
+const f=(c)*9/5 + 32
+var resultadoB = (c - 32)*5/9 + 273.15
+console.log( resultadoB, "k") //272.0388888888889//
+var resultadoA = (c)*9/5 + 32
+console.log( resultadoA, "f") //86//
+
+//d//
+const c=prompt("Quantos graus está hoje?")
+let resposta1=Number("19")
+console.log("Ela respondeu:", resposta1)
+
+const f=(c)*9/5 + 32
+var resultadoB = (c - 32)*5/9 + 273.15
+console.log( resultadoB, "k") //265.92777777777775//
+var resultadoA = (c)*9/5 + 32
+console.log( resultadoA, "f") //66.2//
+
+
+//RESPOSTAS - EXERCÍCIO 2 ESCRITA DE CÓDIGO//
+const bemEstar=prompt("Olá, você está bem?")
+let resposta1=prompt("-Estou bem, obrigada!")
+console.log("Ela respondeu:", resposta1)
+
+const idade=prompt("Qual sua idade?")
+let resposta2=Number("-Tenho 36 anos")
+console.log("Ela respondeu:", resposta2)
+
+const profissao=prompt("Trabalha em quê?")
+let resposta3=prompt("-Sou produtora de eventos!")
+console.log("Ela respondeu:", resposta3)
+
+const musica=prompt("E sua banda preferida?")
+let resposta4=prompt("-Pearl Jam, é claaaaro!")
+console.log("Ela respondeu", resposta4)
+
+const musica2=prompt("E qual música preferida do Pearl Jam?")
+let resposta5=prompt("-Huuuuum, Black sem sombra de dúvidas!") 
+console.log("E por fim, ela disse:", resposta5)
+
+//RESPOSTAS - EXERCÍCIO 3 ESCRITA DE CÓDIGO//
+const kw=0.05
+var resultadoA = kw * 280
+console.log( resultadoA, "Valor a ser pago sem desconto") //R$14,00//
+var resultadoB = (kw * 280)*0.15
+console.log( resultadoB, "Valor do desconto") //R$2,10//
+var resultadoC = resultadoA - resultadoB
+console.log( resultadoC, "Valor a ser pago com desconto") //R$11,90//
 

@@ -1,5 +1,7 @@
-const kelvin="32"
-const fahrenheit="212"
-const celsius="100"
-let resultadoK=(fahrenheit-kelvin)*5/9 + 273.15
-console.log(resultadok)
+const kw=0.05
+var resultadoA = kw * 280
+console.log( resultadoA, "Valor a ser pago sem desconto") //R$14,00//
+var resultadoB = (kw * 280)*0.15
+console.log( resultadoB, "Valor do desconto") //66.2//
+var resultadoC = resultadoA - resultadoB
+console.log( resultadoC, "Valor a ser pago com desconto") //66.2//
