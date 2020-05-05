@@ -1,0 +1,29 @@
+header {
+    display: flex;
+    background-color: mediumpurple;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: xx-large;
+    justify-content: center;
+    margin: auto;
+}
+
+main {
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: grid;
+    padding: 100px;
+    background-color: aliceblue;
+}
+
+footer {
+    display: flex;
+    background-color: mediumpurple;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: xx-large;
+    justify-content: center;
+    margin: auto;
+}
