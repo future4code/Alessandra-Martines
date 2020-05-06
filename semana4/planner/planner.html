@@ -10,8 +10,7 @@
 <body>
     <header>
        <p>Nova tarefa: </p> &nbsp;&nbsp;
-       <input id="meu-input" type="text" maxlength="10" onchange="adicionarItem">&nbsp;&nbsp;
-       <form method="post" action="escrever-atividade">
+       <input id="meu-input" type="text" onchange="adicionarItem">&nbsp;&nbsp;
             <select name="dia-da-semana">
                 <option value="Segunda">Segunda</option>
                 <option value="Terça">Terça</option>
@@ -20,19 +19,20 @@
                 <option value="Sexta">Sexta</option>
                 <option value="Sábado">Sábado</option>
                 <option value="Domingo">Domingo</option>
-            </select>
-       </form>&nbsp;&nbsp;
+            </select>&nbsp;&nbsp;       
        <button onclick="adicionarItem()">Adicionar</button>
     </header>
 
     <main>
-        <ul>Segunda</ul>
-        <ul>Terça</ul>
-        <ul>Quarta</ul>
-        <ul>Quinta</ul>
-        <ul>Sexta</ul>
-        <ul>Sábado</ul>
-        <ul>Domingo</ul>
+        <div id="dia-da-semana" class="container">
+            <ul class="s1">Segunda</ul>
+            <ul class="s2">Terça</ul>
+            <ul class="s3">Quarta</ul>
+            <ul class="s4">Quinta</ul>
+            <ul class="s5">Sexta</ul>
+            <ul class="s6">Sábado</ul>
+            <ul class="s7">Domingo</ul>
+        </div>
     </main>
 
     <footer> Sempre planeje seu dia escrevendo!</footer>
