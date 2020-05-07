@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="blog.css" type="text/css" rel="stylesheet">
     <script src="blog.js"></script>
-    <title>Document</title>
+    <title>Blog</title>
 </head>
 <body>
     <h1>Novo Projeto</h1>
 
     <h3>Crie oportunidades para seu nicho, conte mais sobre ele:</h3>
-
-    <p>Nome:</p><input type="text" placeholder="Nome completo" onclick="rastreiaEnvioNome(event)">
-    <p>E-mail:</p><input type="text" placeholder="Digite seu e-mail" onclick="rastreiaEnvioDeEmail(event)">
-    <p>Nicho:</p><input type="text" placeholder="Digite seu e-mail" onclick="rastreiaEnvioDeEmail(event)">
-    <p>Mensagem:</p><input type="text" placeholder="Digite seu e-mail" onclick="rastreiaEnvioDeEmail(event)">
-    
-    <button onclick="rastreiaCliqueEmail(event)">Enviar mensagem</button>
+    <form id="formulario">
+        <label>Nome:</label><input id="nome" type="text" placeholder="Nome completo"><br>
+        <label>E-mail:</label><input id="email" type="text" placeholder="Digite seu e-mail"><br>
+        <label>Nicho:</label><input id="nicho" type="text" placeholder="Qual ramo quer falar?"><br>  
+        <label>Mensagem:</label><textarea id="mensagem" type="text" placeholder="Relate aqui sobre seu nicho, levantando pontos fortes e. fracos oportunidades que gostaria de trabalhar"></textarea>
+        <button onclick="valoresPost()">Enviar mensagem</button>
+    </form>
+    <div id="impressaovalores"></div>
 </body>
 </body>
 </html>
