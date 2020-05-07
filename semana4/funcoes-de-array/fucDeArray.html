@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="fucDeArray.css" type="text/css" rel="stylesheet">
+    <script src="fucDeArray.js"></script>
+    <title>Blog</title>
+</head>
+<body>
+    <h1>Controlador de despesas</h1>
+
+    <h3>Cadastro de despesas</h3>
+    <form id="formulario">
+        <label>Valor</label><input id="nome" type="number"><br>
+        <label>Tipo (Casa, Viagem, Rolês, Outros) <br>
+        <label>Descrição</label><input id="nicho" type="text" placeholder="Qual ramo quer falar?"><br>  
+        <label>Mensagem:</label><textarea id="mensagem" type="text" placeholder="Relate aqui sobre seu nicho, levantando pontos fortes e. fracos oportunidades que gostaria de trabalhar"></textarea><br>
+        <button onclick="valoresPost()">Cadastrar Despesas</button>
+    </form>
+    <div id="impressaovalores"></div>
+
+    <h3>Despesas Detalhadas</h3>
+    <form id="formulario">
+        <label>Tipo (Casa, Viagem, Rolês, Outros) <br>
+        <label>Valor Mínimo</label><input id="nome" type="number"><br>
+        <label>Valor Máximo</label><input id="nome" type="number"><br>
+        <button>Filtrar</button><button onclick="valoresPost()">Limpar Filtro</button>
+    </form>
+    <div id="impressaovalores"></div>
+
+    <h3>Extrato</h3>
+    <form id="formulario">
+        <label>Valor Total: <br>
+    </form>
+</body>
+</body>
+</html>
