@@ -1,27 +1,25 @@
 //Descrevendo o objeto
-let post = {
-    nome: '',
-    email: '',
-    nicho: '',
-    mensagem: '',
+let controlador = {
+    valorReal: '',
+    tipo: ['casa', 'viagem', 'rolê', 'outros'],
+    descricao: '',
 } 
 
 //Capturando valores do HTML
-function valoresPost(){
+function valoresDetalhado(){
     event.preventDefault()
-    let nomeImpresso = document.getElementById('nome').value
-    let emailImpresso = document.getElementById('email').value
-    let nichoImpresso = document.getElementById('nicho').value
-    let mensagemImpresso = document.getElementById('mensagem').value
+    let valorRealImpresso = document.getElementById('valorReal').value
+    let tipoImpresso = document.getElementById('tipo').value
+    let descricaoImpresso = document.getElementById('descricao').value
     let array = []
 
-    post.nome = nomeImpresso
-    post.email = emailImpresso
-    post.nicho = nichoImpresso
-    post.mensagem = mensagemImpresso
-
-    array.push(post)
+    controlador.valorReal = valorRealImpresso
+    controlador.tipo = tipoImpresso
+    controlador.descricao = descricaoImpresso
+  
+    array.push(controlador)
     console.log(array)
 
-    document.getElementById('impressaovalores').innerHTML += `<h1>${post.nome}</h1><br><h2>${post.email}</h2><br><b>${post.nicho}</b><br><i>${post.mensagem}</i>`
+    document.getElementById('impressaovalores').innerHTML += `<h1>${controlador.valorReal}</h1><br><h2>${controlador.tipo}</h2><br><b>${controlador.descricao}</b>`
 }
+
