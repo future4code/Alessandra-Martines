@@ -11,7 +11,7 @@
     <h1>Controlador de despesas</h1>
 
     <h3>Cadastro de despesas</h3>
-    <form id="formulario1">
+    <form id="formulario">
         <label>Valor R$</label> <input id="valorReal" type="number"><br>
         <label>Tipo</label>
         <select id="tipo" name="tipo" type="number">
@@ -20,28 +20,29 @@
             <option value="Rolês">Rolês</option>
             <option value="Outros">Outros</option><br>
         </select><br>
-        <label>Descrição</label> <input id="descricao" type="text">
+        <label>Descrição</label> <input id="descricao" type="text"><br>
         <button onclick="valoresDetalhado()">Cadastrar Despesas</button>
     </form>
 
     <h3>Despesas Detalhadas</h3>
-    <form id="formulario2">
+    <form id="formulario">
         <label>Tipo</label>
-        <select name="tipo_de_despesa" type="number">
+        <select id="tipoFiltro" name="tipo_de_despesa" type="number">
             <option value="Casa">Casa</option>
             <option value="Viagem">Viagem</option>
             <option value="Rolês">Rolês</option>
             <option value="Outros">Outros</option><br>
         </select><br>
-        <label>Valor Mínimo R$</label> <input id="nome" type="number"><br>
-        <label>Valor Máximo R$</label> <input id="nome" type="number"><br>
-        <button onclick="valoresPost()">Filtrar</button> <button onclick="valoresPost()">Limpar Filtros</button>
+        <label>Valor Mínimo R$</label> <input id="minimo" type="number"><br>
+        <label>Valor Máximo R$</label> <input id="maximo" type="number"><br>
+        <button onclick="captadorDeFiltro()">Filtrar</button> <button onclick="limparFiltro()">Limpar Filtros</button>
     </form>
+    <div id="impressaofiltros"></div>
 
     <h3>Extrato</h3>
     <h4>Valor Total R$</h4>
     <div id="impressaovalores"></div>
-
     
+
 </body>
 </html>
