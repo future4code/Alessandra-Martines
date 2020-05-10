@@ -43,4 +43,8 @@ if(numero1 > 0 && numero2 > 0) {
   console.log(mensagem)
 }
 
-
+//RESPOSTA 2 - a) será FALSE, pois para o && são necessários 2 trues. 
+// b) também será FALSE, se fosse (booleano1 && booleano1) || !booleano3 daria true 
+// c) para este será TRUE, pois bool2 e bool3 são FALSE e bool4 é false e bool1 é TRUE, no uso de || (ou, basta um ser TRUE)
+// d) este não tenho tanta certeza, acho que FALSE, porque para o segundo parenteses, precisamos de dois TRUE, mas não sei pq o negação apareceu
+// e) este também fiquei na dúvida, mas arrisco TRUE pois para o || basta 1 true
