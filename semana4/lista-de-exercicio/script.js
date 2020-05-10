@@ -15,3 +15,32 @@
 //RESPOSTA 4 - foi declarada uma constante de números uma variável indinita e uma zero. E ele pede no loop para achar o
 // menor e o maior número e colocar nas variáveis declaradas. (numero1 = -10 numero2 = 1950)
 
+//EXERCÍCIO DE LOGICA DE PROGRAMAÇÃO
+//RESPOSTA 1 EX.1 - você cria uma variavel e chama ela no console, ela percorrer e imprimir quantas tem e quais são as arrays [(4) ["Bom", "dia", "Labenudos", "!"]]
+const words = ["Bom", "dia", "Labenudos","!"]
+console.log(words)
+
+//RESPOSTA 1 EX.2 - usando o for e adicionando um push, neste caso pedi pra ele percorrer do começo (i=0) ao 
+//fim (length) cada ala (array) e animal do zoológico.
+let animais = ["Macaco", "Girafa", "Leão", "Zebra"]
+let zoo = []
+for (let i = 0; i < animais.length; i++) {
+    zoo.push(`Em nosso zoologico na ala ${i} temos o seguinte bicho ${animais[i]}`)
+}
+console.log(zoo)
+
+//RESPOSTA 1 EX.3 - Por último, usei uma condicional para percorrer minhas variaveis e dizer qual vem antes e depois (O 100 vem depois do 32)
+const numero1 = 100;
+const numero2 = 32;
+
+if(numero1 > 0 && numero2 > 0) {
+  let mensagem
+  if(numero1 > numero2) {
+    mensagem = `O ${numero1} vem depois do ${numero2}`
+} else {
+    mensagem = `O ${numero2} vem depois do ${numero1}`
+  }
+  console.log(mensagem)
+}
+
+
