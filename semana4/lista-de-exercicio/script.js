@@ -85,4 +85,21 @@ if (b % a === 0){
 diferença = b - a
 console.log(`A diferença entre eles é ${diferença}`)
 
+//EXERCÍCIOS DE FUNÇÕES
+//RESPOSTA 1 - 
 
+//EXERCICIOS DE OBJETOS
+//RESPOSTA 1 -  O array é usado pra guardas valores de várias variaveis, já o objeto separa variavel por variável, 
+// ele nomeia o tipo de variável. Ex: animal1 = [dog], animal2 = [cat] essas são arrays, já o objeto seria animal1: dog, animal2: gato.
+
+//RESPOSTA 2 - código abaixo
+function criaRetangulo(lado1, lado2){
+	let largura = lado1
+	let altura = lado2
+	perimetro = 2*(altura + largura)
+	area = altura * largura
+}
+
+criaRetangulo(2,5)
+console.log(`O perimetro é ${perimetro}`)
+console.log(`Sua area é ${area}`)
