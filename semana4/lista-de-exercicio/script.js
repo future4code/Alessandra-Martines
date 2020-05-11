@@ -103,3 +103,15 @@ function criaRetangulo(lado1, lado2){
 criaRetangulo(2,5)
 console.log(`O perimetro é ${perimetro}`)
 console.log(`Sua area é ${area}`)
+
+//RESPOSTA 3 - codigo abaixo
+const filmePreferido = {
+  nome: 'Bastardos Inglorios',
+  direção: 'Quentin Tarantino',
+  lançado: '2009',
+  ator1: 'Brad Pitt',
+  ator2: 'Mélanie Laurent',
+  ator3: 'Christoph Waltz',
+}
+console.log('Venha assistir ao filme '+ filmePreferido.nome +', ' + 'dirigido por '+ filmePreferido.direção + ' e estrelado por ' + filmePreferido.ator1 + ',' + filmePreferido.ator2 +' e '+ filmePreferido.ator3)
+
