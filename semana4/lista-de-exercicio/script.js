@@ -48,3 +48,41 @@ if(numero1 > 0 && numero2 > 0) {
 // c) para este será TRUE, pois bool2 e bool3 são FALSE e bool4 é false e bool1 é TRUE, no uso de || (ou, basta um ser TRUE)
 // d) este não tenho tanta certeza, acho que FALSE, porque para o segundo parenteses, precisamos de dois TRUE, mas não sei pq o negação apareceu
 // e) este também fiquei na dúvida, mas arrisco TRUE pois para o || basta 1 true
+
+//RESPOSTA 3
+
+//RESPOSTA 4
+
+//RESPOSTA 5 - codigo abaixo
+const numero1 = 15
+const numero2 = 30
+
+let a = numero1
+let b = numero2
+
+if (a < b) {
+    console.log(`O maior é: ${numero2}`)
+} else {
+	console.log(`O menor é: ${numero1}`)
+}
+
+if (a % b === 0){
+    console.log(`${numero2} é divisível por ${numero1}`)
+} else if(b % a === 0){
+    console.log(`${numero2} é divisível por ${numero1}`)
+} else {
+	console.log('Nenhum é divisível')
+}
+
+if (b % a === 0){
+    console.log(`${numero1} não é divisível por ${numero2}`)
+} else if(b % a === 0){
+    console.log(`${numero1} não é divisível por ${numero2}`)
+} else {
+	console.log('Nenhum é divisível')
+}
+
+diferença = b - a
+console.log(`A diferença entre eles é ${diferença}`)
+
+
