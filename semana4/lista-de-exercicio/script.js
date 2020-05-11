@@ -115,3 +115,16 @@ const filmePreferido = {
 }
 console.log('Venha assistir ao filme '+ filmePreferido.nome +', ' + 'dirigido por '+ filmePreferido.direção + ' e estrelado por ' + filmePreferido.ator1 + ',' + filmePreferido.ator2 +' e '+ filmePreferido.ator3)
 
+//RESPOSTA 4 - codigo abaixo
+const pessoa = {
+  nome: 'Alessandra',
+  idade: '36',
+  email: 'leka.produtora@gmail.com',
+  endereço: 'Não informado',
+} 
+function anonimizarPessoa (novoNome){
+nome += novoNome
+}
+
+pessoa.nome = 'ANONIMA'; 
+console.log(pessoa) 
