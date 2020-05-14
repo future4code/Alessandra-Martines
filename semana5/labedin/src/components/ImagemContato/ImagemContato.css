@@ -1,0 +1,13 @@
+.image-contato-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    width: 510px;
+    padding: 30px 30px;
+    margin: 10px auto;
+}
+
+.image-contato-container > img {
+    width: 30px;
+    margin-right: 10px;
+}
