@@ -1,64 +1,27 @@
-import React from 'react';
+import React from "react";
+import PerguntaAberta from "./PerguntaAberta";
+import PerguntaFechada from "./PerguntaFechada";
 
-class FormularioInscricao extends React.Component {
-  state = {
-    listaItens: [],
-
-    valorInputNome: "",
-    valorInputIdade: "", 
-    valorInputEmail: "",
-  };
-
-  adicionarResposta = () => {
-    const novaResposta = {
-      id: Date.now(),
-      nome: this.state.valorInputNome,
-      idade: this.state.valorInputIdade,
-      email: this.state.valorInputEmail,
-    };
-    const novoNome = [...this.state.listaItens, novaResposta];
-  }
-
-  onChangeInputNome = event => {
-    this.setState({ valorInputNome: event.target.value })
-  }
-  
-  onChangeInputIdade = event => {
-    this.setState({ valorInputIdade: event.target.value })
-  }
-
-  onChangeInputEmail = event => {
-    this.setState({ valorInputEmail: event.target.value })
-  }
-
+class Etapa1 extends React.Component {
   render() {
     return (
       <div>
-       
-        <h3>ETAPA 1 - DADOS GERAIS</h3>
-        <div>
-        <p> Qual o seu nome? </p>
-          <input value={this.state.valorInputNome}
-          onChange={this.onChangeInputNome}
-          placeholder={'Digite sua resposta'}
-          />
-
-        <p> Qual a sua idade? </p>
-          <input value={this.state.valorInputIdade}
-          onChange={this.onChangeInputIdade}
-          placeholder={'Digite sua resposta'}
-          />
-
-        <p> Qual o seu e-mail? </p>
-          <input value={this.state.valorInputEmail}
-          onChange={this.onChangeInputEmail}
-          placeholder={'Digite sua resposta'}
-          />
-
-          <button onClick={this.adicionaPessoadicionarResposta}>Próxima etapa</button>
-          <div>{FormularioInscricao}</div>
-        </div>
+        <h1>ETAPA 1 - DADOS GERAIS</h1>
+        <PerguntaAberta pergunta={"1. Qual o seu nome?"} />
+        <PerguntaAberta pergunta={"2. Qual sua idade?"} />
+        <PerguntaAberta pergunta={"3. Qual seu email?"} />
+        <PerguntaFechada
+          pergunta={"4. Qual a sua escolaridade?"}
+          opcoes={[
+            "Ensino médio incompleto",
+            "Ensino médio completo",
+            "Ensino superior incompleto",
+            "Ensino superior completo"
+          ]}
+        />
       </div>
-    )
+    );
   }
 }
+
+export default Etapa1;
