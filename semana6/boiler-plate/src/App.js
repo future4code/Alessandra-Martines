@@ -20,31 +20,59 @@ const InputsContainer = styled.div`
 
 class App extends React.Component {
     state = {
-      id: 0,
-      tarefas: [],
+      tarefas: [
+        {
+          id: Date.now(), 
+          texto: '1ª tarefa',
+          completa: false 
+        },
+        {
+          id: Date.now(), 
+          texto: '2ª tarefa',
+          completa: true 
+        },
+      ],
       inputValue: '',
-      filter: ''
-    }
+      filter: '',
+    };
 
   componentDidUpdate() {
-
-  };
+ 
+  }
 
   componentDidMount() {
-
-  };
+    
+  }
 
   onChangeInput = (event) => {
-
+    this.setState({ inputValue: event.target.value});
   }
 
   criaTarefa = () => {
+    const novaTarefa = {
+      id: Date.now(),
+      texto: this.state.inputValue,
+      completa: false,
+    };
+    const novasTarefas = [...this.state.tarefas, novaTarefa];
 
+    this.setState({tarefas: novasTarefas});
+    this.setState.inputValue = '';
   }
 
   selectTarefa = (id) => {
+    const novaArray = this.state.tarefas.map(tarefa => {
+      if (tarefa.id === id) {
+        const copiaDaTarefa = { ...tarefa };
+        copiaDaTarefa.completa = !copiaDaTarefa.completa;
+        return copiaDaTarefa;
+      } else {
+        return tarefa;
+      }
+    });
 
-  }
+    this.setState({ tarefas: novaArray });
+  };
 
   onChangeFilter = (event) => {
 
@@ -83,13 +111,16 @@ class App extends React.Component {
         <TarefaList>
           {listaFiltrada.map(tarefa => {
             return (
-              <Tarefa
-                completa={tarefa.completa}
-                onClick={() => this.selectTarefa(tarefa.id)}
-              >
-                {tarefa.texto}
-              </Tarefa>
-            )
+              <div>
+                <Tarefa
+                  key={tarefa.id}
+                  completa={tarefa.completa}
+                  onClick={() => this.selectTarefa(tarefa.id)}
+                >
+                  {tarefa.texto}
+                </Tarefa>
+              </div>
+            );
           })}
         </TarefaList>
       </div>
