@@ -10,14 +10,16 @@ class CreateRegistration extends React.Component {
     onChangeNameValue = event => {
       const newName =  event.target.value;
       this.setState({ name: newName });  
+      console.log(newName)
     };
     
     onChangeEmailValue = event => {
       const newEmail =  event.target.value;
       this.setState({ email: newEmail });  
+      console.log(newEmail)
     };
     
-    onClickCreateValue = event => {
+    onClickCreateValue = () => {
       const axiosConfig = {
           headers: {
               Authorization: "alessandra-bertelli-mello"
@@ -32,8 +34,8 @@ class CreateRegistration extends React.Component {
         Axios
         .post(
           "https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users",
-        body, 
-        axiosConfig
+          body, 
+          axiosConfig
         )
         .then(() => {
           alert(`Sucesso na criação do usuário ${this.state.name}!`);

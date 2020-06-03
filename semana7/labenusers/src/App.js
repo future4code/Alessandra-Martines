@@ -4,22 +4,24 @@ import SpoonRegistrationPage from './components/SpoonRegistrationPage';
 
 class App extends React.Component {
   state = {
-    userRegistration: "registered",
+    userRegistration: "CreateRegistration",
   };
 
   anotherPage = () => {
-    if (this.state.mainPage === "CreateRegistration") {
-      this.setState({ mainPage: "SpoonRegistration" });
+    if (this.state.userRegistration === "CreateRegistration") {
+      this.setState({ userRegistration: "SpoonRegistration" });
+      console.log(this.state.userRegistration)
     } else {
-      this.setState({ mainPage: "CreateRegistration" });
+      this.setState({ userRegistration: "CreateRegistration" });
+      console.log(this.state.userRegistration)
     }
   };
 
   render() {
     return (
       <div>
-        <button onclick={this.anotherPage}>MUDAR TELA</button>
-        {this.state.mainPage === "CreateRegistration" ? (
+        <button onClick={this.anotherPage}>MUDAR TELA</button>
+        {this.state.userRegistration === "CreateRegistration" ? (
           <CreateRegistrationPage />
         ) : (
           <SpoonRegistrationPage />

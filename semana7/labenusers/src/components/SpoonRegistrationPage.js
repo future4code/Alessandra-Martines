@@ -20,6 +20,7 @@ class SpoonRegistration extends React.Component {
         Axios
           .get(
             "https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users",
+            axiosConfig
           )
           .then(response => {
             this.setState({ userList: response.data });
@@ -44,7 +45,7 @@ class SpoonRegistration extends React.Component {
     render() {
       return (
         <ul>
-          {this.state.userList.length === 0 && <div>Carregando.......</div>}
+          {this.state.userList.length === 0 && <div>Listagem de usuário</div>}
           {this.state.userList.map(user => {
               return (
                   <li>
