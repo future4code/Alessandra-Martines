@@ -1,19 +1,19 @@
 import React from 'react';
 import './App.css';
-import CreateRegistrationPage from './components/CreateRegistrationPage';
-import SpoonRegistrationPage from './components/SpoonRegistrationPage';
+import CreatePlaylistPage from './components/CreatePlaylistPage';
+import ShowPlaylistPage from './components/ShowPlaylistPage';
 
 class App extends React.Component {
   state = {
-    userRegistration: "CreateRegistration",
+    userRegistration: "CreatePlaylist",
   };
 
   anotherPage = () => {
-    if (this.state.userRegistration === "CreateRegistration") {
-      this.setState({ userRegistration: "SpoonRegistration" });
+    if (this.state.userRegistration === "CreatePlaylist") {
+      this.setState({ userRegistration: "ShowPlaylist" });
       console.log(this.state.userRegistration)
     } else {
-      this.setState({ userRegistration: "CreateRegistration" });
+      this.setState({ userRegistration: "CreatePlaylist" });
       console.log(this.state.userRegistration)
     }
   };
@@ -22,10 +22,10 @@ class App extends React.Component {
     return (
       <div>
         <button onClick={this.anotherPage}>BIBLIOTECA</button>
-        {this.state.userRegistration === "CreateRegistration" ? (
-          <CreateRegistrationPage />
+        {this.state.userRegistration === "CreatePlaylist" ? (
+          <CreatePlaylistPage />
         ) : (
-          <SpoonRegistrationPage />
+          <ShowPlaylistPage />
         )}
       </div>
     );
