@@ -26,8 +26,12 @@ function App() {
   }, [])
 
   return (
-   
-  );
+   <MainContainer>
+     <CardProfile>
+       <Header onClickChangePage={() => changePage()} currentPage={currentPage}/>
+     </CardProfile>
+   </MainContainer>
+);
 };
   
 export default App;
