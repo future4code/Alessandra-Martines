@@ -1,37 +1,14 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React from 'react';
+import Main from './Components/Main/Main';
+import ResetButton from './Components/ResetButton/ResetButton'
 
+function App(){
+  return(
+    <div>
+      <Main/>
+      <ResetButton/>
+    </div>
+  );
+}
 
-function App() {
-  const [profile, setProfile] = useState({});
-  const [currentPage, setCurrentPage] = useState('profile')
-
-  const changePage = () => {
-    currentPage === 'profile' ? setCurrentPage('list') : setCurrentPage('profile')
-  }
-
-  const getProfile = () => { 
-  axios
-    .get('https://us-central1-missao-newton.cloudfunctions.net/astroMatch/alessandra-bertelli-mello/person')
-    .then(response => {
-        setProfile(response.data.profile)
-  })
-    .catch(error => {
-      console.log(error);
-    });
-  }
-  
-  useEffect(() => {
-    getProfile()
-  }, [])
-
-  return (
-   <MainContainer>
-     <CardProfile>
-       <Header onClickChangePage={() => changePage()} currentPage={currentPage}/>
-     </CardProfile>
-   </MainContainer>
-);
-};
-  
 export default App;
