@@ -3,6 +3,8 @@ import HeaderHome from '../Header/HeaderHome';
 import Footer from '../Footer/Footer';
 
 import { useHistory } from "react-router-dom";
+import Login from '../Acess/Login';
+import NewRegister from '../Acess/NewRegister';
 
 const HomePage = () => {
     const history = useHistory();
@@ -18,9 +20,9 @@ const HomePage = () => {
     return (
         <div>
             <HeaderHome />
-            <p>LOGIN USUÁRIO</p>
+            <Login />
             <h1>OU</h1>
-            <p>NOVO CADASTRO</p>
+            <NewRegister />
             <button onClick={TripPage}>Ir para Viagens</button>
             <button onClick={Routers}>Ir para Admin</button>
             <Footer />

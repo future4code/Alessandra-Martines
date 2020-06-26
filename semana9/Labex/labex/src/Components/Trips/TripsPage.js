@@ -8,15 +8,20 @@ import { useHistory } from "react-router";
 
 const TripPage = () => {
     const history = useHistory();
-  
+      
     const HomePage = () => {
-      history.replace("/");
+      history.push("/HomePage");
+    };
+  
+    const Routers = () => {
+      history.push("/admin");
     };
 
     return(
         <div>
             <HeaderTrips/>
             <button onClick={HomePage}>Ir para HomePage</button>
+            <button onClick={Routers}>Ir para Admin</button>
             <TripRegistration/>
             <BuyTrips/>
             <Footer/>

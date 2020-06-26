@@ -4,7 +4,11 @@ function HeaderTrips() {
     return(
         <div>
             <img src={'https://picsum.photos/500/30'} />
-            <input>Ordenação de viagens</input>
+            <select>
+                <option>MARTE</option>
+                <option>JÚPITER</option>
+                <option>SATURNO</option>
+            </select>            
             <hr></hr>
         </div>
     );

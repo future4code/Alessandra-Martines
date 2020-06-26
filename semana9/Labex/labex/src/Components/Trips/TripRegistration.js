@@ -3,12 +3,13 @@ import React from 'react';
 function TripRegistration() {
     return(
         <div>
-            <h4>Criar novo destino:</h4>
-            <input>LOCAL:</input>
-            <input>NOME DA VIAGEM:</input>
-            <input>DATA PARTIDA:</input>
-            <input>DESCRIÇÃO:</input>
-            <input>DURAÇÃO:</input>
+            <h4>CRIAR NOVO REGISTRO:</h4>
+            <p>LOCAL:</p><input></input>
+            <p>NOME DA VIAGEM:</p><input></input>
+            <p>DATA PARTIDA:</p><input></input>
+            <p>DESCRIÇÃO:</p><input></input>
+            <p>DURAÇÃO:</p><input></input>
+            
             <button>CRIAR</button>
         </div>
     );
