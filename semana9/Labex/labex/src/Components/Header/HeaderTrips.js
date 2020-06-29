@@ -14,7 +14,7 @@ function HeaderTrips() {
     return(
         <div>
             <HeaderContainer>
-            <img src={'https://picsum.photos/500/30'} />
+            <img src={'https://freight.cargo.site/w/750/i/683a1684f4acc1847a0af8545c8773720129ab6a4749b0afdb261877b6be6ee4/logo_labex.png'} />
             <select>
                 <option>MARTE</option>
                 <option>JÚPITER</option>

@@ -1,7 +1,7 @@
 import React from 'react';
 import HeaderHome from '../Header/HeaderHome';
 import Footer from '../Footer/Footer';
-
+import { useHistory } from 'react-router-dom';
 import Login from '../Acess/Login';
 import NewRegister from '../Acess/NewRegister';
 
@@ -15,7 +15,11 @@ const HomePageContainer = styled.div`
 `
 
 function HomePage() {
-    
+  const history = useHistory();
+
+  const onClickTripPage = () => {
+    history.push("/trips");
+  } 
       return (
         <div>
             <HeaderHome />
@@ -24,7 +28,7 @@ function HomePage() {
               <h1>OU</h1>
               <NewRegister/>
             </HomePageContainer>
-              <button>Ir para Viagens</button>
+              <button onClick={onClickTripPage}>Ir para Viagens</button>
             <Footer />
         </div>
     );
