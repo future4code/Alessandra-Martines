@@ -12,6 +12,7 @@ function NewRegister() {
             <input></input>
             <p>Senha:</p>
             <input type="password"></input>
+            <button>CADASTRAR</button>
         </div>
     );
 }

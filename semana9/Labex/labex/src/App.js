@@ -1,14 +1,11 @@
 import React from 'react';
 import './App.css';
-import HomePage from './Components/HomePage/HomePage';
-import TripsPage from './Components/Trips/TripsPage';
+import Routes from './Routes';
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App"> 
-    <HomePage />
-    <TripsPage/>
-    </div>
+   <Routes/>
   );
 }
 
